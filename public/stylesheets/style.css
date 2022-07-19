@@ -1,0 +1,425 @@
+:root {
+    --primary: #a3dbb6;
+    --dark: #38302e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--dark);
+    height: 100px;
+}
+
+header nav a {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav button {
+    border: none;
+    color: var(--primary);
+    background-color: var(--dark);
+}
+
+header nav button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header h1 {
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 5px 5px #60866c;
+    padding: 0 5px;
+    margin: 0 20px;
+    margin-top: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.post {
+    border: #38302e solid 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.post .title {
+    background-color: #38302e;
+    position: relative;
+    top: -22px;
+}
+
+.post .title a {
+    color: var(--primary);
+}
+
+.post .title a:hover {
+    text-decoration: underline;
+}
+
+.post .content p{
+    position: relative;
+    font-size: larger;
+    font-weight: bold;
+    color: #38302e;
+    top: -15px;
+    margin: 0 10px;
+    word-wrap: normal;
+}
+
+.post .meta {
+    margin-left: 5px;
+}
+
+.comment {
+    border: #38302e solid 2px;
+    margin-bottom: 2px;
+}
+
+.comment .meta {
+    color: var(--primary);
+    background-color: #38302e;
+}
+
+.comment .text {
+    margin: 2px 5px;
+    font-weight: bold;
+}
+
+.login-form {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: #38302e solid 10px;
+    border-radius: 15px;
+    width: 600px;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: var(--primary);
+    background-color: #38302e;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+.login-form input {
+    margin-left: 20px;
+    width: 95%;
+    line-height: 2;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-form button {
+    border: none;
+    color: lightblue;
+    background-color: var(--dark);
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    height: 50px;
+    font-size: larger;
+}
+
+.login-form button:hover {
+    background-color: #979797;
+}
+
+.login-form .sign-up-link {
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.signup-form {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: #38302e solid 10px;
+    border-radius: 15px;
+    width: 600px;
+}
+
+.title-welcome {
+    color: var(--dark);
+    width: 100%;
+    text-align: center;
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: var(--primary);
+    background-color: #38302e;
+}
+
+.signup-form label {
+    font-weight: bold;
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+.signup-form input {
+    margin-left: 20px;
+    width: 95%;
+    line-height: 2;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    border: none;
+    color: lightblue;
+    background-color: var(--dark);
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    height: 50px;
+    font-size: larger;
+}
+
+.signup-form button:hover {
+    background-color: #979797;
+}
+
+.signup-form .login-link {
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.new-post-form {
+    width: 90%;
+    margin: 30px auto;
+    border: #38302e solid 2px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.new-post-form h2 {
+    position: relative;
+    top: -15px;
+    width: 100%;
+    background-color: #38302e;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px 10px 0 0;
+}
+
+.new-post-form label {
+    font-weight: bold;
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+.new-post-form input {
+    line-height: 1.5;
+    font-size: larger;
+    font-weight: bold;
+    border: var(--dark) solid 2px;
+    margin-left: 5px;
+    width: 90%;
+}
+
+.new-post-form textarea {
+    border: var(--dark) solid 2px;
+    font-size: large;
+    margin-left: 5px;
+    width: 95%;
+    height: 250px;
+}
+
+.new-post-form .btn {
+    border: none;
+    color: var(--primary);
+    background-color: var(--dark);
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    height: 50px;
+    font-size: larger;
+}
+
+.new-post-form .btn:hover {
+    background-color: #434be0;
+}
+
+.new-post-div {
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.new-post-div .new-post-btn {
+    padding: 5px;
+    color: var(--primary);
+    background-color: var(--dark);
+    border-radius: 15px;
+}
+
+.new-post-btn:hover {
+    background-color: black;
+}
+
+.edit-post-form {
+    width: 90%;
+    margin: 30px auto;
+    border: #38302e solid 2px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.edit-post-form h2 {
+    position: relative;
+    top: -15px;
+    width: 100%;
+    background-color: #38302e;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px 10px 0 0;
+}
+
+.edit-post-form label {
+    font-weight: bold;
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+.edit-post-form input {
+    line-height: 1.5;
+    font-size: larger;
+    font-weight: bold;
+    border: var(--dark) solid 2px;
+    margin-left: 5px;
+    width: 90%;
+}
+
+.edit-post-form textarea {
+    border: var(--dark) solid 2px;
+    font-size: large;
+    margin-left: 5px;
+    width: 95%;
+    height: 250px;
+}
+
+.edit-post-form .btn {
+    border: none;
+    color: var(--primary);
+    background-color: var(--dark);
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    height: 50px;
+    font-size: larger;
+}
+
+.edit-post-form .btn:hover {
+    background-color: rgb(205, 245, 97);
+}
+
+.edit-post-form .delete-post-btn:hover {
+    background-color: rgb(145, 60, 60);
+}
+
+.comment-form {
+    width: 90%;
+    margin: 30px auto;
+    border: #38302e solid 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.comment-form h2 {
+    position: relative;
+    top: -15px;
+    width: 100%;
+    background-color: #38302e;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px 5px 0 0;
+}
+
+.comment-form textarea {
+    border: var(--dark) solid 2px;
+    font-size: large;
+    margin-left: 5px;
+    width: 95%;
+    height: 50px;
+}
+
+.comment-form button {
+    border: none;
+    color: var(--primary);
+    background-color: var(--dark);
+    margin: 108px;
+    border-radius: 53px;
+    text-align: center;
+    width: 95%;
+    height: 50px;
+    font-size: larger;
+}
+
+.comment-form button:hover {
+    background-color: rgb(192, 249, 175);
+    color: rgb(58, 120, 83);
+}
+
+.home-post {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--primary);
+    background-color: var(--dark);
+    border-radius: 5px;
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+.home-post h2 {
+    margin: 0;
+    padding: 5px;
+}
+
+.home-post a {
+    color: var(--primary);
+    padding: 1px;
+}
